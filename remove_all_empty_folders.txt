@@ -1,0 +1,3 @@
+:: This simple one liner deletes all empty subfolders in current dircetory, it works recursively
+:: Implement this into Windows command prompt, or save it as a batc file (beware to use two %% percentage signs then)
+for /f "delims=" %d in ('dir /s /b /ad ^| sort /r') do rd "%d"
